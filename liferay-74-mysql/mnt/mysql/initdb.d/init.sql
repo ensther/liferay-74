@@ -1,0 +1,5 @@
+CREATE DATABASE lportal CHARACTER SET utf8;
+
+CREATE USER 'lportal'@'%' IDENTIFIED BY 'lportal';
+GRANT ALL PRIVILEGES ON lportal.* TO 'lportal'@'%';
+FLUSH PRIVILEGES;

@@ -1,0 +1,11 @@
+network.host: localhost
+network.bind_host: 0.0.0.0
+cluster.name: LiferayElasticsearchCluster
+discovery.type: single-node
+discovery.seed_hosts:
+  - es-node1:9300
+http.port: 9200
+node.name: es-node1
+transport.port: 9300
+xpack.security.enabled: false
+ingest.geoip.downloader.enabled: false
